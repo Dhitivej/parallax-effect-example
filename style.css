@@ -1,0 +1,109 @@
+html,
+body {
+     height: 100%;
+     margin: 0;
+     font-size: 16px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 400;
+     color: #666;
+
+     line-height: 1.8em;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+     position: relative;
+     opacity: 0.7;
+
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     /* Parallax Effect Here */
+     background-attachment: fixed;
+}
+
+.pimg1 {
+     background-image: url('./img/image1.jpg');
+     min-height: 100%;
+}
+
+.pimg2 {
+     background-image: url('./img/image2.jpg');
+     min-height: 400px;
+}
+
+.pimg3 {
+     background-image: url('./img/image3.jpg');
+     min-height: 400px;
+}
+
+.section {
+     text-align: center;
+     padding: 50px 80px;
+}
+
+.section-light {
+     background: #ccc;
+     color: #000;
+}
+
+.section-dark {
+     background: #282e34;
+     color: #ddd;
+}
+
+.ptext {
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     text-align: center;
+     color: #000;
+     font-size: 1.6rem;
+     text-transform: uppercase;
+     letter-spacing: 8px;
+}
+
+.ptext .border {
+     background: #111;
+     color: #fff;
+     padding: 1.4rem;
+}
+
+.ptext .border.trans {
+     background-color: transparent;
+}
+
+/* for reponsiveness */
+@media (max-width: 576px) {
+
+     .pimg1,
+     .pimg2,
+     .pimg3 {
+          background-attachment: scroll;
+     }
+}
+
+@media (max-width: 388px) {
+     .border {
+          padding: 0;
+     }
+
+     .ptext {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          color: #000;
+          letter-spacing: 8px;
+          font-size: 11px;
+     }
+
+
+     .section {
+          padding: 10px;
+          font-size: 0.8rem;
+          line-height: 1.3;
+     }
+}
